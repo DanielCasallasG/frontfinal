@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript" src="js/funcionesMensajes.js"></script>  
+     
+        </head>
+    
+
+    <body>
+        <h1>Mensajes</h1>
+        <ul> 
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categoria.html">Categoria</a></li>
+            <li><a href="skate.html">Skate</a></li>
+            <li><a href="cliente.html">Cliente</a></li>
+            <li><a href="reservaciones.html">Reservaciones</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+    </body>
+
+    <div id="resultadoMensajes"></div>
+    
+    
+    <script type="text/javascript"> 
+    window.onload = autoInicioMensajes();
+    </script>
+
+    <input type="text" id="messagetext" placeholder="mensaje">
+    <button onclick="guardarInformacionMensajes()">Guardar Mensajes</button>
+    
+    
+    
+    <select id="select-client"></select>
+
+    <script type="text/javascript">
+        window.onload = autoInicioRelacionCliente();
+    </script>
+
+    <select id="select-skate"></select>
+    
+    <script type="text/javascript">
+            window.onload = autoInicioSkate();
+    </script>
+
+</html>
+
